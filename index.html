@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set the character encoding and viewport for the webpage -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Set the title of the webpage -->
     <title>User Card</title>
+    <!-- Define a shortcut icon for the webpage -->
     <link rel="shortcut icon" href="https://rb.gy/i1e0g" type="image/x-icon">
 </head>
-<body>
-    <div class="container">
-        <div class="user_card" id="usercard">
+<body class="light-mode">
+    <!-- Create a container for the user card and related elements -->
+    <div class="light-mode container" id="container">
+        <!-- User Card -->
+        <div class="light-mode user_card" id="usercard">
+            <!-- User Card Header -->
             <div class="user_head">
-                    <img src="placeholder.jpg" alt="profile picture " class="profile_image">
-                    <h3 class="username"></h3>
+                <!-- Profile Picture -->
+                <img src="placeholder.jpg" alt="profile picture" class="profile_image">
+                <!-- User's Name -->
+                <h3 class="username"></h3>
             </div>
-            <div class="user_info">
+            <!-- User Information -->
+            <div class="user_info" id="userinfo">
                 <p class="full_name"></p>
                 <p class="gender"></p>
                 <p class="date_of_birth"></p>
@@ -22,11 +32,16 @@
                 <p class="email"></p>
             </div>
         </div>
+        <!-- Wrapper for a button to fetch a new user -->
         <div class="wrapper">
-            <button  class="btn-pink" id="fetchButton" >Fetch New User </button>
+            <button class="btn-pink" id="fetchButton">Fetch New User</button>
+            <button class="btn-pink" id="toggleModeButton">Change Mode</button>
         </div>
-        
     </div>
+    <div id="map"></div>
+
 </body>
+<!-- Link to the external JavaScript file -->
 <script src="script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 </html>
