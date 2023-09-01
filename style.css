@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 45px;
+}
+.usercard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fdfdfe;
+    position: relative;
+}
+
+.profile_image{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  }
+
+  .user_info{
+    text-align: left;   
+    color: #555;
+    padding: 20px;
+  }
+
+  .username{
+    margin: 10px 0;
+    font-size: 1.8rem;
+    color: #ff6b6b;
+    transition: color 0.3s;
+  }
+  
+
+
+
+/*            button css                */
+
+wrapper {
+    width: 100vw;
+    height: 100vh;
+  }
+  .btn-pink {
+    background-color: #e84949;
+    /* width: fit-content; */
+    color: white;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    border: none;
+    /* border-radius: 10px; */
+  }
