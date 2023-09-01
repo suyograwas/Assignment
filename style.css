@@ -22,7 +22,7 @@ body{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     padding: 45px;
 }
-.usercard{
+.user_card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,18 +45,29 @@ body{
   }
 
   .user_info{
-    text-align: left;   
+    text-align: left;
     color: #555;
     padding: 20px;
+    background-color: #fdfdfe;
+    border-top: 1px solid #e0e0e0;
   }
 
   .username{
     margin: 10px 0;
     font-size: 1.8rem;
     color: #ff6b6b;
-    transition: color 0.3s;
   }
-  
+
+  .user_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .user_card.expanded .user_info {
+    display: block;
+  }
 
 
 
